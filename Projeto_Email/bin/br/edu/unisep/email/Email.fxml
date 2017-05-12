@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="545.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unisep.email.EmailController">
+   <children>
+      <TextField fx:id="txtEmail" layoutX="128.0" layoutY="59.0" prefHeight="25.0" prefWidth="265.0" />
+      <Button layoutX="309.0" layoutY="506.0" mnemonicParsing="false" onAction="#mandarEmail" text="Enviar Email" />
+      <Text layoutX="85.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+      <Text layoutX="85.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha:" />
+      <PasswordField fx:id="txtSenha" layoutX="128.0" layoutY="108.0" prefHeight="25.0" prefWidth="265.0" />
+      <TextArea fx:id="txtMensagemEnviar" layoutX="118.0" layoutY="330.0" prefHeight="164.0" prefWidth="290.0" />
+      <TextField fx:id="txtTitulo" layoutX="128.0" layoutY="248.0" prefHeight="25.0" prefWidth="265.0" />
+      <Text layoutX="86.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo:" />
+      <TextField fx:id="txtEmailDestinario" layoutX="128.0" layoutY="288.0" prefHeight="25.0" prefWidth="265.0" />
+      <Text layoutX="21.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Destinatario:" />
+      <Text layoutX="88.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Msg:" />
+      <Text layoutX="208.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Login">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="208.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mensagem">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
