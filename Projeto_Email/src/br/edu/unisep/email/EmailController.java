@@ -57,7 +57,7 @@ public class EmailController {
 			Transport.send(message);
 			MsgUtils.exibirInfo("Email enviado com sucesso!");
 		} catch (MessagingException e) {
-			//throw new RuntimeException(e);
+			//throw new RuntimeException(e); // antigo er
 			e.printStackTrace();
 			MsgUtils.exibirErro("Algo de errado aconteceu");
 		}
