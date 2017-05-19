@@ -60,6 +60,7 @@ public class EmailController {
 			//throw new RuntimeException(e); // antigo er
 			e.printStackTrace();
 			MsgUtils.exibirErro("Algo de errado aconteceu");
+			//teste comentario por José Lucas
 		}
 	}
 }
