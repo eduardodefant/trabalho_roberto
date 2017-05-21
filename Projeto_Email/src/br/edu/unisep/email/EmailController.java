@@ -20,15 +20,20 @@ import javafx.scene.control.TextField;
 
 public class EmailController {
 
-	@FXML private TextField txtEmail;
+	@FXML
+	private TextField txtEmail;
 
-	@FXML private PasswordField txtSenha;
+	@FXML
+	private PasswordField txtSenha;
 
-	@FXML private TextArea txtMensagemEnviar;
+	@FXML
+	private TextArea txtMensagemEnviar;
 
-	@FXML private TextField txtTitulo;
+	@FXML
+	private TextField txtTitulo;
 
-	@FXML private TextField txtEmailDestinario;
+	@FXML
+	private TextField txtEmailDestinario;
 
 	public void mandarEmail(ActionEvent event) {
 		Properties props = new Properties();
@@ -48,7 +53,8 @@ public class EmailController {
 		try {
 
 			Message message = new MimeMessage(session);
-		//	message.setFrom(new InternetAddress("seuemail@gmail.com")); // Remetente
+			// message.setFrom(new InternetAddress("seuemail@gmail.com")); //
+			// Remetente
 			Address[] toUser = InternetAddress // Destinatário(s)
 					.parse(txtEmailDestinario.getText());
 			message.setRecipients(Message.RecipientType.TO, toUser);
@@ -57,10 +63,10 @@ public class EmailController {
 			Transport.send(message);
 			MsgUtils.exibirInfo("Email enviado com sucesso!");
 		} catch (MessagingException e) {
-			//throw new RuntimeException(e); // antigo er
+			// throw new RuntimeException(e); // antigo er
 			e.printStackTrace();
 			MsgUtils.exibirErro("Algo de errado aconteceu");
-			//teste comentario por José Lucas
+			// teste comentario por José Lucas
 		}
 	}
 }
